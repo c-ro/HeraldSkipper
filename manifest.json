@@ -1,0 +1,13 @@
+{	
+	"manifest_version": 2,
+	"name": "Herald Skipper",
+	"version": "0.1",
+	"description": "Clicks the \"Skip\" button for you on the \"welcome\" page",
+	"icons": {"128":"HS.png"},
+	"content_scripts": [
+	{
+		"matches": ["http://www.kentucky.com/welcome_page/*"],
+		"js": ["content.js"]
+		}],
+	"permissions": ["tabs"]
+}
